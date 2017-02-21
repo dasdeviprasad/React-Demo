@@ -11,12 +11,7 @@ class Content extends React.Component{
             selectedUser: {}
         };
     }
-
-    onChange() {
-        this.setState({
-            users: UserStore.getUsers()
-        })
-    }
+    
     componentDidMount(){
         let promise = axios.get('https://api.github.com/users');
         promise.then((response) => {

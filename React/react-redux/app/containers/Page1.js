@@ -12,13 +12,13 @@ function mapDispatchToProps(dispatch){
     return {
         userFetched: function(users) {
             dispatch({
-                actionType: 'USER_FETCHED', 
+                type: 'USER_FETCHED', 
                 item: users
             })
         }, 
         addUser: function(user){
             dispatch({
-                actionType: 'ADD_USER', 
+                type: 'ADD_USER', 
                 item: user
             });
         }

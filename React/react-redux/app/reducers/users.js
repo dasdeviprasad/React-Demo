@@ -1,7 +1,7 @@
 const initialState = [];
 
 export default function users(state = initialState, payload) {
-    switch(payload.actionType){
+    switch(payload.type){
         case 'ADD_USER':
             return state.concat([payload.item]);
             break;
